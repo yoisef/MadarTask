@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            tools:context=".SaveModule.Activitiy.SaveActivity">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_user"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/opensans"
+                android:layout_gravity="center"
+                android:textSize="@dimen/material_text_title"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="@string/user_name"
+                android:id="@+id/user_name"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensans"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="@string/user_age"
+                android:textColor="@color/black"
+                android:id="@+id/user_age"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:fontFamily="@font/opensans"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="@string/user_job"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:id="@+id/user_job"
+                android:fontFamily="@font/opensans"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+
+                android:background="@drawable/rectang"
+                android:orientation="horizontal"
+
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:paddingTop="5dp"
+                    android:id="@+id/gender_spinner"
+                    android:gravity="center"
+
+
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:background="@drawable/droparrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/dropdown"
+                    android:layout_height="30dp" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+
+                android:text="@string/save"
+                android:layout_marginTop="16dp"
+                android:id="@+id/save_btn"
+                android:background="@drawable/rectang"
+                android:textStyle="bold"
+                android:fontFamily="@font/opensans"
+                android:textSize="@dimen/material_text_button"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</layout>

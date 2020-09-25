@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MadarSoftTask</string>
+    <string name="user_name">Name</string>
+    <string name="user_age">Age</string>
+    <string name="user_job">Job Title</string>
+    <string name="user_gender">Gender</string>
+    <string name="choose_gender">Choose Gender</string>
+
+    <string name="save">Save</string>
+    <string name="users">Users</string>
+    <string name="register_user">Register New User</string>
+    <string name="delete_all">Delete All</string>
+
+    <string-array name="gender">
+        <item>Choose Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+</resources>
